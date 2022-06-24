@@ -30,6 +30,7 @@ env_logger = "0.9"
 libp2p-mplex = { path = "../../muxers/mplex" }
 libp2p-noise = { path = "../../transports/noise" }
 libp2p-tcp = { path = "../../transports/tcp" }
+libp2p = { path = "../..", default-features = false, features = ["dcutr", "relay", "plaintext", "identify", "tcp-async-io", "ping", "noise", "dns-async-std"] }
 
 [build-dependencies]
 prost-build = "0.10"
